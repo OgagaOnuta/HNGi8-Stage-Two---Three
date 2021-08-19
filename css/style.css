@@ -1,0 +1,152 @@
+#application {
+	display: grid;
+	margin: 10px 5px;
+	padding: 10px 20px;
+}
+
+#application h2 {
+	grid-row: 1;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	text-decoration: underline black;
+	color: teal;
+}
+
+#addr1 {
+	grid-row: 2;
+	grid-column: 4;
+	margin: 5px;
+}
+
+#addr2 {
+	grid-row: 3;
+	margin: 5px;
+}
+
+#letterbody {
+	grid-row: 4;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	margin: 5px;
+}
+
+#letterbody h2 {
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
+	color: unset;
+}
+
+#resume {
+	margin: 10px 5px;
+	border-top: 5px solid teal;
+	padding: 10px 20px;
+	overflow: auto;
+}
+
+#resume h2 {
+	text-decoration: underline black;
+	color: teal;
+}
+
+#left, #middle, #right {
+	margin: auto;
+	padding: 10px;
+	width: 30%;
+	float: left;
+}
+
+#middle {
+	border-left: double teal;
+	border-right: double teal;
+	height: auto;
+}
+
+#right {
+	margin: 0;
+	border-right: none;
+}
+
+table {
+	margin: 5px 0;
+	width: 100%;
+}
+
+#resume th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+#resume td {
+	text-align: left;
+}
+
+.column1 {
+	width: 30%;
+}
+
+#resume li {
+	list-style: square;
+}
+
+footer {
+	margin: 10px 5px;
+	border-top: 5px solid teal;
+	padding: 10px 20px;
+	overflow: auto;
+}
+
+footer section {
+	margin: auto;
+	padding: 10px;
+	width: 30%;
+	float: left;
+	text-align: center;
+}
+
+footer #last {
+	margin: 0;
+}
+
+footer div {
+	height: 65px;
+}
+
+footer a {
+	text-decoration: none;
+	color: teal;
+}
+
+footer .main {
+	font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+	#left, #middle, #right {
+		padding: 10px;
+		width: auto;
+		float: none;
+		border-top: double teal;
+	}
+
+	#left {
+		border-top: none;
+	}
+
+	#middle {
+		border-left: none;
+		border-right: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	footer section {
+		width: 100%;
+		float: none;
+		border-top: 1px solid teal;
+	}
+
+	footer #first {
+		border-top: none;
+	}
+}
